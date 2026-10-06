@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panen SiRUP</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --link: #0969da; --line: #d1d9e0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --link: #4493f8; --line: #3d444d; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px; }
+  h1 { margin: 0 0 4px; font-size: 28px; }
+  h2 { margin-top: 32px; font-size: 20px; border-bottom: 1px solid var(--line); padding-bottom: 4px; }
+  p.sub { margin: 0; color: var(--muted); }
+  a { color: var(--link); }
+  footer { margin-top: 40px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Panen SiRUP</h1>
+  <p class="sub">Aplikasi desktop untuk mengumpulkan data rencana pengadaan publik dari SiRUP ke Google Sheets.<br>
+  A desktop app that collects public procurement plan data from SiRUP into Google Sheets.</p>
+
+  <h2>Apa yang dilakukan aplikasi ini</h2>
+  <p>Panen SiRUP berjalan di komputer pengguna sendiri. Aplikasi ini mengambil data paket pengadaan yang terbuka untuk umum
+  dari situs SiRUP (sirup.inaproc.id), merapikannya, lalu menyimpannya sebagai file CSV.</p>
+  <p>Jika pengguna memilih <strong>Hubungkan Google</strong>, aplikasi membuat satu Google Sheet bernama
+  "Data Pengadaan SiRUP" di Google Drive pengguna dan menulis data ke sheet tersebut. Aplikasi hanya bisa membuka
+  file yang dibuatnya sendiri (izin <code>drive.file</code>), tidak bisa membaca file lain di Drive pengguna.</p>
+
+  <h2>What this app does</h2>
+  <p>Panen SiRUP runs locally on the user's computer. It collects publicly available procurement package data from
+  SiRUP (sirup.inaproc.id), cleans it, and saves it as CSV files.</p>
+  <p>If the user chooses <strong>Connect Google</strong>, the app creates one Google Sheet named "Data Pengadaan SiRUP"
+  in the user's Google Drive and writes the data there. It only accesses files it created itself
+  (<code>drive.file</code> scope) and cannot read any other file in the user's Drive.</p>
+
+  <h2>Kebijakan privasi / Privacy policy</h2>
+  <p><a href="privacy.html">Baca kebijakan privasi / Read the privacy policy</a></p>
+
+  <footer>Kontak / Contact: <a href="mailto:khristianalexsandro@gmail.com">khristianalexsandro@gmail.com</a></footer>
+</main>
+</body>
+</html>
